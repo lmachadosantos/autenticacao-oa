@@ -1,0 +1,5 @@
+.vagrant/
+vendor/
+.buildpath
+.project
+.settings/

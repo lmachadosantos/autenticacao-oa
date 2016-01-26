@@ -1,0 +1,29 @@
+{
+    "name": "lmachadosantos/autenticacao-oa",
+    "description": "Projeto de Autenticação - Orientada a Aspectos",
+    "type": "project",
+    "require": {
+        "respect/rest": "^0.6.0",
+        "respect/relational": "^0.8.0",
+        "respect/config": "^2.0",
+        "respect/validation": "1.0.3",
+        "goaop/framework": "1.0.0-alpha.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "phpdocumentor/phpdocumentor": "2.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leandro Machado dos Santos",
+            "email": "lmachadosantos@icloud.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+		"psr-4": {
+			"Autenticacao\\": [ "src/", "tests/" ]
+		}
+    }
+}
