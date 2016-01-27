@@ -32,6 +32,16 @@ class UsuarioRepository
         return $usuarios;
     }
 
+    public function obtemPorLogin($login)
+    {
+        $usuario = $this->mapper->usuario(array(
+            'login' => "{$login}",
+            'excluido' => 0
+        ))->fetch();
+        
+        return $usuario;
+    }
+
     public function loginExiste($login)
     {
         $usuario = $this->mapper->usuario(array(

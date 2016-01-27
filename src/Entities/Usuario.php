@@ -89,6 +89,14 @@ class Usuario
         }
     }
 
+    public function autentica($senha)
+    {
+        if ($this->senha == $this->criptografaSenha($senha))
+            return true;
+        else
+            return false;
+    }
+
     public function obtemCopia()
     {
         $usuario = new stdClass();
